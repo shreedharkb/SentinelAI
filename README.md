@@ -1,4 +1,5 @@
 # SentinelAI
+<<<<<<< HEAD
 
 AI-Powered Dynamic Access Control System
 
@@ -65,3 +66,5 @@ SentinelAI addresses these limitations by implementing Attribute-Based Access Co
 ## License
 
 MIT License - See [LICENSE](LICENSE) file for details
+=======
+AI-Agent based Automated Secure Dynamic Access Control solution.
