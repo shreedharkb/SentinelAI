@@ -6,6 +6,7 @@ from loguru import logger
 from app.core.config import get_settings
 from app.core.database import mongodb
 from app.core.redis import redis_client
+from app.api import api_router
 
 
 @asynccontextmanager
@@ -51,6 +52,9 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# Include API routers
+app.include_router(api_router)
 
 
 @app.get("/")

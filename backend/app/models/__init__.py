@@ -19,6 +19,28 @@ from app.models.policy import (
     PolicyInDB,
     PolicyResponse,
 )
+from app.models.access_log import (
+    AccessDecision,
+    DecisionSource,
+    RiskLevel,
+    AccessContext,
+    AccessRequest,
+    AIAnalysis,
+    AccessLogBase,
+    AccessLogCreate,
+    AccessLogInDB,
+    AccessLogResponse,
+    AccessLogQuery,
+)
+from app.models.resource import (
+    ResourceType,
+    SensitivityLevel,
+    ResourceBase,
+    ResourceCreate,
+    ResourceUpdate,
+    ResourceInDB,
+    ResourceResponse,
+)
 
 __all__ = [
     # User models
@@ -40,4 +62,24 @@ __all__ = [
     "PolicyUpdate",
     "PolicyInDB",
     "PolicyResponse",
+    # Access log models
+    "AccessDecision",
+    "DecisionSource",
+    "RiskLevel",
+    "AccessContext",
+    "AccessRequest",
+    "AIAnalysis",
+    "AccessLogBase",
+    "AccessLogCreate",
+    "AccessLogInDB",
+    "AccessLogResponse",
+    "AccessLogQuery",
+    # Resource models
+    "ResourceType",
+    "SensitivityLevel",
+    "ResourceBase",
+    "ResourceCreate",
+    "ResourceUpdate",
+    "ResourceInDB",
+    "ResourceResponse",
 ]
