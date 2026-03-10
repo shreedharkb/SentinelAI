@@ -14,10 +14,9 @@ redis==5.0.1
 python-jose[cryptography]==3.3.0
 passlib[bcrypt]==1.7.4
 
-# AI/ML
+# AI/ML - Using Ollama (local LLM)
 langchain==0.1.4
-langchain-openai==0.0.5
-openai==1.10.0
+langchain-community==0.0.16
 
 # Validation
 pydantic==2.5.3

@@ -29,8 +29,9 @@ class Settings(BaseSettings):
     access_token_expire_minutes: int = 30
     refresh_token_expire_days: int = 7
     
-    # OpenAI
-    openai_api_key: str = ""
+    # Ollama (Local LLM)
+    ollama_base_url: str = "http://localhost:11434"
+    ollama_model: str = "phi3:mini"  # Options: phi3:mini, gemma:2b, mistral
     
     # CORS
     cors_origins: str = "http://localhost:3000"
